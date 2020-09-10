@@ -27,10 +27,10 @@ public class Restart_Button : MonoBehaviour
     {
         Debug.Log("onclick triggered");
         //CustomEvent.Trigger(player, "Restart");
-        Variables.Graph(
+        /*Variables.Graph(
             GraphReference.New(
                 GameObject.Find("Player").GetComponent<FlowMachine>(), true)
-            ).Set("Lifes", 4);
+            ).Set("Lifes", 4);*/
         player.gameObject.transform.position = GameObject.FindWithTag("Respawn").gameObject.transform.position;
         player.SetActive(true);
         GameObject.Find("Death window").SetActive(false);
